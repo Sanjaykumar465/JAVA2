@@ -6,6 +6,8 @@ class A {
            ++x;
         } else {
            ++y;
+
+           
         }
         System.out.println(x);
         System.out.println(y);
