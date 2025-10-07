@@ -43,9 +43,6 @@
 //    }
 // }
 
-
-
-
 // class E {
 //    public static void main(String[] args) {
 //       char operator = '%';
@@ -90,23 +87,97 @@
 
 // Homework
 
+//  cla
+
 class Week {
       public static void main(String[] args) {
-            int age = 8;
-            String day = "weekend"; 
+            boolean weekend = true;
+            int age = 54;
+            if(age <= 10) {
+                 if (weekend == true) {
+                       System.out.println("100");
+                 } else {
+                       System.out.println("80");
+                 }
+            } 
+            else if (age > 10 && age < 55) {
+                  if(weekend == true) {
+                        System.out.println("200");
+                  } else {
+                        System.out.println("180");
+                  }
+             }  else if(age > 55) {
+                  if(weekend == true) {
+                        System.out.println("300");
+                  } else {
+                        System.out.println("280");
+                  }
+             }
 
-            if (age <= 10 && day.equals("weekend")) {
-                  System.out.println("100");
-            } else if (age <= 10 && day.equals("weekday")) {
-                  System.out.println("80");
-            } else if (age <= 55 && day.equals("weekend")) {
-                  System.out.println("200");
-            } else if (age <= 55 && day.equals("weekday")) {
-                  System.out.println("180");
-            } else if (age > 55 && day.equals("weekend")) {
-                  System.out.println("300");
-            } else if (age > 55 && day.equals("weekday")) {
-                  System.out.println("280");
+      }
+}
+
+class P {
+      public static void main(String[] args) {
+            int x = 97;
+            switch (x) {
+                  case 'x':
+                        System.out.println("10");
+                        break;
+                  case 97:
+                        System.out.println("20");
+                        break;
+                  case 30:
+                        System.out.println("30");
+                        break;
+                  default:
+                        System.out.println("default");
+                        break;
             }
       }
+}
+
+class Q {
+      public static void main(String[] args) {
+            int week = 1;
+            switch (week) {
+                  case 1:
+                        System.out.println("Sunday");
+                        break;
+                  case 2:
+                        System.out.println("Monday");
+                        break;
+                  case 3:
+                        System.out.println("Tuesday");
+                        break;
+                  default:
+                        System.out.println("default");
+                        break;
+            }
+      }
+}
+
+class Z {
+      public static void main(String[] args) {
+            int mark = 90;
+            switch (mark) {
+                  case 60:
+                        System.out.println("Fail");
+                        break;
+                  case 70:
+                        System.out.println("Good");
+                        break;
+                  case 80:
+                        System.out.println("Very Good");
+                        break;
+                  case 90:
+                        System.out.println("Excellent");
+                        break;
+                  default:
+                        System.out.println("Invalid");
+                        break;
+
+            }
+      }
+
 }
