@@ -256,12 +256,84 @@ class M {
     public static void main(String[] args) {
         int num = 123;
         int rev = 0;
-        while(num > 0){
+        while (num > 0) {
             int rem = num % 10;
             rev = rev * 10 + rem;
             num = num / 10;
         }
         System.out.println(rev);
     }
-    
+
+}
+
+// check a simgle number is Prime nunber or not
+class N {
+    public static void main(String[] args) {
+        int num = 12;
+        int count = 0;
+        for (int i = 1; i <= num; i++) {
+            if (num % i == 0) {
+                count++;
+            }
+        }
+        if (count == 2) {
+            System.out.println("prime");
+        } else {
+            System.out.println("not prime");
+        }
+    }
+}
+
+// range between prime number from 3 to 9
+
+class O {
+    public static void main(String[] args) {
+        int num = 9;
+        for (int i = 3; i <= num; i++) {
+            int count = 0;
+            for (int j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    count++;
+                }
+            }
+            if (count == 2) {
+                System.out.println(i);
+            }
+        }
+    }
+}
+
+//
+class Q {
+    public static void main(String[] args) {
+        int num = 6;
+        int count = 0;
+        for (int i = 1; i <= num; i++) {
+            if (num % i == 0) {
+                count++;
+            }
+        }
+        if (count == 2) {
+            System.out.println("Prime Nmber");
+        } else {
+            System.out.println("Not Prime");
+        }
+    }
+}
+
+class S {
+    public static void main(String[] args) {
+        int num = 9;
+        for (int i = 3; i <= num; i++) {
+            int count = 0;
+            for (int j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    count++;
+                }
+            }
+            if (count == 2) {
+                System.out.println(i);
+            }
+        }
+    }
 }
