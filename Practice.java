@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class A {
     public static void main(String[] args) {
         int amount = 1000;
@@ -323,7 +325,9 @@ class Q {
 
 class S {
     public static void main(String[] args) {
-        int num = 9;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int num = sc.nextInt();
         for (int i = 3; i <= num; i++) {
             int count = 0;
             for (int j = 1; j <= i; j++) {
@@ -335,5 +339,78 @@ class S {
                 System.out.println(i);
             }
         }
+    }
+}
+
+class V {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the array size");
+        int size = sc.nextInt();
+        int x[] = new int[size];
+        System.out.println("Enter the array elements");
+        for (int i = 0; i < size; i++) {
+            x[i] = sc.nextInt();
+        }
+        System.out.println("The array element are:");
+        for (int i = 0; i < size; i++) {
+            if (x[i] % 2 == 0) {
+                System.out.println(x[i]);
+            }
+
+        }
+
+    }
+}
+
+class U {
+    public static void main(String[] args) {
+        int[] arr = { 1, 2, 3, 4 };
+        int max = arr[0];
+        System.out.println("The maximum element of array is:");
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        System.out.println(max);
+    }
+}
+
+class W {
+    public static void main(String[] args) {
+        int[] arr = { 25, 20, 16, 30 };
+        int min = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        System.out.println("The min element of the arrya is" + min);
+    }
+
+}
+
+// write a program to sort an array in decending array
+
+class X {
+    public static void main(String[] args) {
+
+        int[] arr = { 25, 20, 16, 30 };
+        int temp = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] < arr[j]) {
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
+      
+
     }
 }
