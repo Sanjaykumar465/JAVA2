@@ -392,7 +392,6 @@ class W {
 }
 
 // write a program to sort an array in decending array
-
 class X {
     public static void main(String[] args) {
 
@@ -407,10 +406,42 @@ class X {
                 }
             }
         }
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
-        }
-      
 
+        System.out.println("The Largest Number is : " + arr[1]);
+    }
+}
+
+// The 
+class Y {
+    public static void main(String[] args) {
+
+        int[] arr = { 25, 20, 16, 30 };
+        int temp = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] < arr[j]) {
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+
+        System.out.println("The Largest Number is : " + arr[1]);
+    }
+}
+
+//
+class Z {
+    public static void main(String[] args) {
+        int[] x = { 2, 4, 3, 1, 5 };
+        int[] y = new int[5];
+        for (int i = 0; i < x.length; i++) {
+            y[i] = x[i];
+
+        }
+        for (int i = 0; i < y.length; i++) {
+            System.out.println(y[i]);
+        }
     }
 }
